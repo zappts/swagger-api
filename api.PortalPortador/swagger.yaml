@@ -48,7 +48,7 @@ paths:
           name: "productId"
           in: "query"
           description: "productId"
-          required: false
+          required: true
           type: "string"
         - 
           name: "cpf"
