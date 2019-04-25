@@ -595,6 +595,7 @@ paths:
           type: "string"
         - in: body
           name: billPaymentSchema
+          description: "CPF do usuário e o número do cartão encryptado com a chave pública"
           schema:
             $ref: '#/definitions/accounttSchema'
       responses: 
@@ -2266,6 +2267,8 @@ definitions:
   accounttSchema:
     type: "object"
     properties:
+      cpf:
+        type: "string"
       encryptedParam:
         type: "string"
   
