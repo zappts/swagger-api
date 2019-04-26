@@ -2139,8 +2139,8 @@ definitions:
         type: "string"
       dataPagamento:
         type: "string"
-      descricao:
-        type: "number"
+      serviceType:
+        type: "string"
   
   bankslippdfbyemailSchema:
     type: "object"
