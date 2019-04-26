@@ -319,12 +319,6 @@ paths:
           description: "client_id"
           required: true
           type: "string"
-        - 
-          name: "tokentransaction"
-          in: "header"
-          description: "Token de transação valido capturado na função 'Valida a senha do cartão'"
-          required: true
-          type: "string"
         - in: body
           name: bankslippdfbyemailSchema
           description: "Parametros para enviar recarga de boleto por email"
@@ -2145,9 +2139,9 @@ definitions:
   bankslippdfbyemailSchema:
     type: "object"
     properties:
-        ourNamber:
+        ourNumber:
           type: "string"
-        cpf:
+        email:
           type: "string"
   
   bankslippdfSchema:
